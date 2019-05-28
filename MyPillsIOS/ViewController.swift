@@ -34,11 +34,11 @@ class ViewController: UIViewController {
         
         // check the bool and set the button and labels
         if isSignIn {
-            signInLabel.text = "Sign In"
-            signInButton.setTitle("Sign In", for: .normal)
+            signInLabel.text = "Entrar"
+            signInButton.setTitle("Entrar", for: .normal)
         } else  {
-        signInLabel.text = "Register"
-            signInButton.setTitle("Register", for : .normal)
+        signInLabel.text = "Registar"
+            signInButton.setTitle("Registar", for : .normal)
         }
     }
     
@@ -82,7 +82,7 @@ class ViewController: UIViewController {
         override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
             emailTextField.resignFirstResponder()
             passwordTextField.resignFirstResponder()
-            print("antonio")
+            
         }
     
     
