@@ -3,18 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A988B362F7FEA2BF63553B89 /* Pods_MyPillsIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 625533B242338A21BA46E545 /* Pods_MyPillsIOS.framework */; };
 		CEAE265B229C05E500FBCC80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAE265A229C05E500FBCC80 /* AppDelegate.swift */; };
 		CEAE265D229C05E500FBCC80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAE265C229C05E500FBCC80 /* ViewController.swift */; };
 		CEAE2660229C05E600FBCC80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAE265E229C05E600FBCC80 /* Main.storyboard */; };
 		CEAE2662229C067700FBCC80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEAE2661229C067700FBCC80 /* Assets.xcassets */; };
 		CEAE2665229C067700FBCC80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAE2663229C067700FBCC80 /* LaunchScreen.storyboard */; };
+		CEAE266D229C0BB600FBCC80 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEAE266C229C0BB600FBCC80 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D8A6A43821EB0B4B4E7D26F /* Pods-MyPillsIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPillsIOS.debug.xcconfig"; path = "Target Support Files/Pods-MyPillsIOS/Pods-MyPillsIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		4E3BD5C4FF2A6A8C2F5A965B /* Pods-MyPillsIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPillsIOS.release.xcconfig"; path = "Target Support Files/Pods-MyPillsIOS/Pods-MyPillsIOS.release.xcconfig"; sourceTree = "<group>"; };
+		625533B242338A21BA46E545 /* Pods_MyPillsIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPillsIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAE2657229C05E400FBCC80 /* MyPillsIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPillsIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAE265A229C05E500FBCC80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEAE265C229C05E500FBCC80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		CEAE2661229C067700FBCC80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEAE2664229C067700FBCC80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEAE2666229C067700FBCC80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEAE266C229C0BB600FBCC80 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A988B362F7FEA2BF63553B89 /* Pods_MyPillsIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A081B89FAA64608AC733496 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D8A6A43821EB0B4B4E7D26F /* Pods-MyPillsIOS.debug.xcconfig */,
+				4E3BD5C4FF2A6A8C2F5A965B /* Pods-MyPillsIOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2E2D55F47CC1ABD97099F8E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				625533B242338A21BA46E545 /* Pods_MyPillsIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CEAE264E229C05E400FBCC80 = {
 			isa = PBXGroup;
 			children = (
 				CEAE2659229C05E500FBCC80 /* MyPillsIOS */,
 				CEAE2658229C05E500FBCC80 /* Products */,
+				1A081B89FAA64608AC733496 /* Pods */,
+				2E2D55F47CC1ABD97099F8E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +80,7 @@
 		CEAE2659229C05E500FBCC80 /* MyPillsIOS */ = {
 			isa = PBXGroup;
 			children = (
+				CEAE266C229C0BB600FBCC80 /* GoogleService-Info.plist */,
 				CEAE265A229C05E500FBCC80 /* AppDelegate.swift */,
 				CEAE265C229C05E500FBCC80 /* ViewController.swift */,
 				CEAE265E229C05E600FBCC80 /* Main.storyboard */,
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEAE2669229C067700FBCC80 /* Build configuration list for PBXNativeTarget "MyPillsIOS" */;
 			buildPhases = (
+				05169807E109E67A93907602 /* [CP] Check Pods Manifest.lock */,
 				CEAE2653229C05E400FBCC80 /* Sources */,
 				CEAE2654229C05E400FBCC80 /* Frameworks */,
 				CEAE2655229C05E400FBCC80 /* Resources */,
+				418D155175199C6F181DC961 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +152,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEAE2665229C067700FBCC80 /* LaunchScreen.storyboard in Resources */,
+				CEAE266D229C0BB600FBCC80 /* GoogleService-Info.plist in Resources */,
 				CEAE2662229C067700FBCC80 /* Assets.xcassets in Resources */,
 				CEAE2660229C05E600FBCC80 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05169807E109E67A93907602 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyPillsIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		418D155175199C6F181DC961 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyPillsIOS/Pods-MyPillsIOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyPillsIOS/Pods-MyPillsIOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyPillsIOS/Pods-MyPillsIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CEAE2653229C05E400FBCC80 /* Sources */ = {
@@ -280,6 +352,7 @@
 		};
 		CEAE266A229C067700FBCC80 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D8A6A43821EB0B4B4E7D26F /* Pods-MyPillsIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +371,7 @@
 		};
 		CEAE266B229C067700FBCC80 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E3BD5C4FF2A6A8C2F5A965B /* Pods-MyPillsIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
