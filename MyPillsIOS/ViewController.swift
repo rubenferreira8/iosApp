@@ -49,7 +49,7 @@ class ViewController: UIViewController {
             if isSignIn  {
             // Sign in the user with Firebase
                 Auth.auth().signIn(withEmail: email, password: pass, completion:   { (user, error) in
-                    
+                    print("signin")
                     // Check that user isn't nil
                     if let u = user {
                         // user is found go to home screen
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
                     }
                     else  {
                         // Error:check error and show message
-                        print("Parece que nao ha net")
+                        print("ddddd")
                         }
                     })
                 
@@ -67,7 +67,7 @@ class ViewController: UIViewController {
                     
                     // Check that user isn't nil
                     if let u = user {
-                        // user is found go to home screen
+                        // user created go to home screen
                         self.performSegue(withIdentifier: "goToHome", sender: self)
                     }
                     else {
