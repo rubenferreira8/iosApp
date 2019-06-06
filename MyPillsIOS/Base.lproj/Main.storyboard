@@ -128,15 +128,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Lembretes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8f-8b-hDU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lembretes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8f-8b-hDU">
                                 <rect key="frame" x="94.5" y="230" width="131" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="z2U-Vt-2pm">
-                                <rect key="frame" x="60" y="20" width="200" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="z2U-Vt-2pm">
+                                <rect key="frame" x="60" y="40" width="200" height="29"/>
                                 <segments>
                                     <segment title="Consultas"/>
                                     <segment title="Médicos"/>
@@ -146,7 +145,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="z2U-Vt-2pm" firstAttribute="leading" secondItem="Vde-Zw-pds" secondAttribute="leading" constant="60" id="1g9-JM-YJO"/>
+                            <constraint firstItem="U8f-8b-hDU" firstAttribute="top" secondItem="z2U-Vt-2pm" secondAttribute="bottom" constant="162" id="ANw-Gm-O6i"/>
+                            <constraint firstItem="z2U-Vt-2pm" firstAttribute="top" secondItem="Vde-Zw-pds" secondAttribute="top" constant="20" id="OWu-9C-KBB"/>
                             <constraint firstItem="U8f-8b-hDU" firstAttribute="centerX" secondItem="Txn-H5-if8" secondAttribute="centerX" id="pTW-sp-xqN"/>
+                            <constraint firstItem="Vde-Zw-pds" firstAttribute="trailing" secondItem="z2U-Vt-2pm" secondAttribute="trailing" constant="60" id="uPb-2Z-MIa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Vde-Zw-pds"/>
                     </view>
